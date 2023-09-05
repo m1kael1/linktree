@@ -11,21 +11,21 @@ function App() {
 				<img
 					className="bg-[#fe3e31]  w-[120px] rounded-full border-2 cursor-pointer border-my-gray-200 group-hover:border-4	 group-hover:border-my-gray-800 transition-all aspect-square object-contain overflow-hidden z-50"
 					src={imageProfile}
-					alt=""
+					alt="profile"
 				/>
 
 				<Massege />
 			</div>
 
 			<a
-				href=""
+				href="https://github.com/m1kael1"
 				className="text-white bg-[#24292F] text-lg hover:scale-110 sm:w-96 transition-all w-full hover:bg-[#24292F]/90 font-medium rounded-lg  px-5 py-3  mb-2 flex justify-center items-center gap-2 min-w-fit"
 			>
 				<GrGithub size={25} />
 				Github
 			</a>
 			<a
-				href=""
+				href="https://www.linkedin.com/in/mikaelagung/"
 				className="text-white bg-gradient-to-r from-blue-700 to-blue-500 text-lg hover:scale-110 sm:w-96 transition-all w-full hover:bg-[#24292F]/90 font-medium rounded-lg  px-5 py-3  mb-2 flex justify-center items-center gap-2 min-w-fit"
 			>
 				<GrLinkedin size={25} />
@@ -33,7 +33,7 @@ function App() {
 			</a>
 
 			<a
-				href=""
+				href="https://www.instagram.com/mikaelagng"
 				className="text-white bg-gradient-to-r  from-[#833AB4] via-[#FD1D1D] to-[#F77737] text-lg hover:scale-110 sm:w-96 transition-all w-full hover:bg-[#24292F]/90 font-medium rounded-lg  px-5 py-3  mb-2 flex justify-center items-center gap-2 min-w-fit"
 			>
 				<GrInstagram size={25} />
