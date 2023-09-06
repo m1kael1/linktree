@@ -2,7 +2,7 @@ import "./App.css";
 import MainLayout from "./layouts/main-layout";
 import { GrLinkedin, GrGithub, GrInstagram } from "react-icons/gr";
 import imageProfile from "./assets/profile.jpg";
-import Massege from "./components/massege";
+import Message from "./components/message";
 
 function App() {
 	return (
@@ -14,7 +14,7 @@ function App() {
 					alt="profile"
 				/>
 
-				<Massege />
+				<Message />
 			</div>
 
 			<a
