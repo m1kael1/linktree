@@ -1,8 +1,8 @@
-import "./App.css";
 import MainLayout from "./layouts/main-layout";
-import { GrLinkedin, GrGithub, GrInstagram } from "react-icons/gr";
 import imageProfile from "./assets/profile.jpg";
 import Message from "./components/message";
+import SocialMedia from "./components/social-media";
+import links from "./data/social-media";
 
 function App() {
 	return (
@@ -16,29 +16,9 @@ function App() {
 
 				<Message />
 			</div>
-
-			<a
-				href="https://github.com/m1kael1"
-				className="text-white bg-[#24292F] text-lg hover:scale-110 sm:w-96 transition-all w-full hover:bg-[#24292F]/90 font-medium rounded-lg  px-5 py-3  mb-2 flex justify-center items-center gap-2 min-w-fit"
-			>
-				<GrGithub size={25} />
-				Github
-			</a>
-			<a
-				href="https://www.linkedin.com/in/mikaelagung/"
-				className="text-white bg-gradient-to-r from-blue-700 to-blue-500 text-lg hover:scale-110 sm:w-96 transition-all w-full hover:bg-[#24292F]/90 font-medium rounded-lg  px-5 py-3  mb-2 flex justify-center items-center gap-2 min-w-fit"
-			>
-				<GrLinkedin size={25} />
-				Linkedin
-			</a>
-
-			<a
-				href="https://www.instagram.com/mikaelagng"
-				className="text-white bg-gradient-to-r  from-[#833AB4] via-[#FD1D1D] to-[#F77737] text-lg hover:scale-110 sm:w-96 transition-all w-full hover:bg-[#24292F]/90 font-medium rounded-lg  px-5 py-3  mb-2 flex justify-center items-center gap-2 min-w-fit"
-			>
-				<GrInstagram size={25} />
-				Instagram
-			</a>
+			{links.map((links, index) => (
+				<SocialMedia key={index} data={links} />
+			))}
 		</MainLayout>
 	);
 }
