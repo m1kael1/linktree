@@ -9,7 +9,7 @@ function App() {
 		<MainLayout>
 			<div className=" flex flex-col group items-center mb-4 transition-all relative ">
 				<img
-					className="bg-[#fe3e31]  w-[120px] rounded-full border-2 cursor-pointer border-my-gray-200 group-hover:border-4	 group-hover:border-my-gray-800 transition-all aspect-square object-contain overflow-hidden z-50"
+					className=" w-[120px] rounded-full border-2 cursor-pointer border-my-gray-200 group-hover:border-4	 group-hover:border-my-gray-800 transition-all aspect-square object-cover overflow-hidden z-50"
 					src={imageProfile}
 					alt="profile"
 				/>
